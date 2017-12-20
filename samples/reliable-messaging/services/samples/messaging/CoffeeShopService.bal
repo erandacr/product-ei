@@ -28,7 +28,7 @@ service<http> coffeeOrderService {
         //would provide a guarantee to the caller on successful delivery of the message.
         json responsePayload = {"Status":"Coffee Order Processed"};
         res.setJsonPayload(responsePayload);
-        res.send();
+        _=res.send();
     }
 }
 
